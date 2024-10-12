@@ -1,0 +1,131 @@
+/*
+  Author: Evelyn Oo
+  File Name: styles.css
+*/
+
+/* color-1: #654f3a
+color-2: #281f15
+color-3: #8b7d71
+color-4: #b7a99e
+color-5: #e7dfd8 */
+
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body and images */
+body {
+  background-color: #e7dfd8;
+  font-family: "Afacad Flux", sans-serif;
+}
+
+
+/* Style rules for header content */
+header {
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  padding: 0.5em 0;
+  color: #373684;
+  display: block;
+}
+
+header h1.banner-heading {
+  display: inline-block;
+  width: 80%;
+  font-size: 1.5em;
+  color: #281f15;
+}
+
+
+/* Style rules for navigation area */
+nav {
+  /* background-color: #2a1f14; */
+  display: block;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav li a {
+  display: block;
+  color: #281f15;
+  font-weight: bold;
+  /* text-align: center; */
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+.content {
+  /* width: 80%; */
+  height: 50%;
+  margin: auto;
+  padding: 0;
+}
+
+.intro {
+  /* margin: 3em 1em 1em 1em; */
+  border: 1px solid #281f15;
+  padding: 1em;
+  height: 60vh;
+  display: flex;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.20), 
+    rgba(0, 0, 0, 0.35)
+  ), url("../images/pots-and-pans.jpg");
+  background-size: cover;
+}
+
+.left-content {
+  /* border: 1px solid #281f15; */
+  margin: auto;
+  width: 40%;
+  padding: 0 1em;
+  background: #fff;
+  opacity: 0.5;
+}
+
+.left-content p {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.right-content {
+  /* border: 1px solid #281f15; */
+  width: 50%;
+  margin: auto;
+}
+
+.right-content img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Style rules for footer content */
+footer {
+  text-align: center;
+  font-size: 0.65em;
+  clear: left;
+}
+
+footer a {
+  color: #4645a8;
+  text-decoration: none;
+}
