@@ -114,6 +114,7 @@ nav li a {
 .intro .right-content {
   display: none;
 }
+/* End-OLD styles */
 
 /* New styles */
 #hero {
@@ -129,7 +130,7 @@ nav li a {
   position: relative;
 }
 
-.left {
+.highlight {
   padding: 1rem 0 2rem 0;
   height: 400px;
   align-content: center;
@@ -140,7 +141,7 @@ nav li a {
   background-size: cover;
 }
 
-.left-content {
+.highlight-content {
   /* border: 1px solid #281f15; */
   margin: auto;
   width: 60%;
@@ -150,7 +151,7 @@ nav li a {
   position: relative;
 }
 
-.left-content p {
+.highlight-content p {
   font-size: 1.5em;
   font-weight: bold;
   font-style: italic;
@@ -202,13 +203,13 @@ nav li a {
   background: linear-gradient(-45deg, #feb47b, #ec935f, #d38569, #4d3122);
 }
 
-.right-content {
-  /* border: 1px solid #281f15; */
+.sub-content {
   width: 100%;
   margin: auto;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
+  justify-content: center;
   align-items: center;           /* Center align items horizontally */
   text-align: center;            /* Center text inside the div */
 }
@@ -390,7 +391,7 @@ footer {
   }
   /* End-Styles for Hero page: OLD styles */
 
-  .right-content {
+  .sub-content {
     flex-direction: row;
   }
   
