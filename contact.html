@@ -5,41 +5,165 @@
 	<title>Slower Cooker Society</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div id="container">
 		<!-- Use the header area for the website name or logo -->
-		<header>
+		<header class="header">
 			<!-- <h1 class="banner-heading">Slow Cooker Society</h1> -->
-			<a href="index.html"><img src="images/logo.jpg" alt="Slower Cooker Society logo" height="200" width="200" class="banner-logo"></a>
+			<a href="index.html"><img src="images/logo.jpg" alt="Slower Cooker Society logo" height="200" width="200" class="header-logo"></a>
 		</header>
+
+		<!-- Use the nav area to add hyperlinks to other pages within the website -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				
+				<!-- Need works -->
+				<li><a href="team.html">Our Team</a></li>
+				<li><a href="specials.html">Specials</a></li>
+				<li><a href="training.html">Training</a></li>
+				<li><a href="media.html">Media</a></li>
+				<li><a href="faqs.html">FAQs</a></li>
+
+				<!-- Not required -->
+				<!-- <li><a href="nutrition.html">Nutrition Tips</a></li>
+				<li><a href="shop.html">Shop</a></li> -->
+
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		
 		
 		<!-- Use the main area to add the main content of the webpage -->
 		<main>
-			<!-- Use the nav area to add hyperlinks to other pages within the website -->
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="nutrition.html">Nutrition Tips</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-			
-			<div class="content">
-				<div class="intro">
-					<div class="left-content">
-						<p>Slow Cooking</p>
-						<p>Fast Nutrition – Delicious</p>
-						<p>Healthy Meals Made Effortless</p>
-					</div>
-					<div class="right-content">
-						<img src="./images/cooked-food.jpg" alt="a picture of fruits">
-					</div>
-				</div>
-			</div>
+			<!-- Contact us page -->
+			<div class="contact-container">
+        <div class="section-heading">
+            <h1>Contact Us</h1>
+        </div>
+
+        <div class="contact-instructions">
+            <h2>How to Reach Us</h2>
+            <ol>
+                <li>Fill out the form below with your details</li>
+                <li>Select the type of inquiry from the dropdown</li>
+                <li>Provide a clear and concise message</li>
+                <li>Click 'Submit Request' to send your message</li>
+            </ol>
+        </div>
+
+        <form action="#" method="post" class="contact-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input 
+                        type="text" 
+                        id="fullName" 
+                        name="fullName" 
+                        placeholder="John Doe" 
+                        required 
+                        autofocus
+                        size="40"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="johndoe@example.com" 
+                        required
+                        size="40"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="(123) 456-7890"
+                        size="40"
+                    >
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inquiry Details</legend>
+                
+                <div class="form-group">
+                    <label for="inquiryType">Inquiry Type</label>
+                    <select id="inquiryType" name="inquiryType" required>
+                        <option value="">Select Inquiry Type</option>
+                        <option value="product">Product Information</option>
+                        <option value="support">Technical Support</option>
+                        <option value="order">Order Tracking</option>
+                        <option value="other">Other Inquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Contact Method</label>
+                    <div class="radio-group">
+                        <input type="radio" id="contactEmail" name="contactMethod" value="email" checked>
+                        <label for="contactEmail">Email</label>
+                        
+                        <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+                        <label for="contactPhone">Phone</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferredDate">Preferred Contact Date</label>
+                    <input 
+                        type="date" 
+                        id="preferredDate" 
+                        name="preferredDate"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="interests">Areas of Interest</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="recipes" name="interests" value="recipes">
+                        <label for="recipes">Recipes</label>
+
+                        <input type="checkbox" id="products" name="interests" value="products">
+                        <label for="products">Product Updates</label>
+
+                        <input type="checkbox" id="workshops" name="interests" value="workshops">
+                        <label for="workshops">Cooking Workshops</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="5" 
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-submit">Submit Request</button>
+                <button type="reset" class="btn btn-reset">Reset Form</button>
+            </div>
+        </form>
+    	</div>
 		</main>
 		
 		<footer>
@@ -74,12 +198,13 @@
 
 			<!-- Footer Bottom -->
 			<div class="footer-bottom">
-				<p>&copy; 2024 Nutrify | All Rights Reserved</p>
-				<p><a href="mailto:slowcookersociety@club.net">slowcookersociety@club.net</a></p>
+				<p>&copy; Copyright 2099. All Rights Reserved.</p>
+				<p>Request information</p>
+				<p>Evelyn Oo&nbsp; &nbsp;C0949186</p>
+				<p><a href="mailto:slowcookersociety@club.net">Request information</a></p>
 			</div>
 		</footer>
-	
+
 	</div>
-	
 </body>
 </html>

@@ -1,0 +1,189 @@
+
+:root {
+  --primary-color: #ff6b00;
+  --secondary-color: #ff9500;
+  --text-dark: #333;
+  --text-light: #666;
+  --background-light: #f9f9f9;
+  --background-grey: #f4f4f4;
+  --border-color: #ddd;
+}
+
+body {
+  color: var(--text-dark);
+}
+
+/* Container */
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Section Heading */
+.section-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-heading h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  position: relative;
+}
+
+.section-heading h1::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* Instructions */
+.contact-instructions {
+  background-color: var(--background-light);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.contact-instructions h2 {
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.contact-instructions ol {
+  padding-left: 30px;
+}
+
+.contact-instructions li {
+  margin-bottom: 10px;
+  color: var(--text-light);
+}
+
+/* Form Styles */
+.contact-form {
+  background-color: var(--background-light);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+fieldset {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--text-dark);
+  padding: 0 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Button Styles */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: var(--secondary-color);
+}
+
+.btn-reset {
+  background-color: var(--background-grey);
+  color: var(--text-dark);
+}
+
+.btn-reset:hover {
+  background-color: #e0e0e0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+  .contact-container {
+      padding: 10px;
+  }
+
+  .section-heading h1 {
+      font-size: 2rem;
+  }
+
+  .form-actions {
+      flex-direction: column;
+  }
+
+  .btn {
+      width: 100%;
+  }
+}
