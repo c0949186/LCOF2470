@@ -112,100 +112,21 @@ header {
   height: auto;
 }
 
-/* Style rules for header content */
-/* header {
-  width: 100%;
-  height: 200px;
-  text-align: center;
-  font-size: 3em;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  text-align: center;
-}
-
-header h1.banner-heading {
+/* Styles for buttons */
+.cta-button {
   display: inline-block;
-  width: 80%;
-  font-size: 1.5em;
-  color: #281f15;
-} */
-
-
-/* Style rules for navigation area */
-/* nav {
-  display: block;
-  background-color: #282726;
-  color: #fff;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-nav li {
-  display: block;
-  border-bottom: 1px solid #999;
-}
-
-nav li:last-child {
-  border-bottom: none;
-}
-
-nav li a {
-  display: block;
-  color: #fff;
-  font-size: 1.5em;
-  font-weight: 400;
-  padding: 0.5em 2em;
+  background-color: #2c2c2c;
+  color: #ffffff;
+  padding: 12px 24px;
   text-decoration: none;
-  
-} */
-
-/* Styles for Hero page body content */
-
-/* Old styles */
-.intro {
-  /* margin: 3em 1em 1em 1em; */
-  border: 1px solid #281f15;
-  padding: 1em;
-  height: 60vh;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.20), 
-    rgba(0, 0, 0, 0.35)
-  ), url("../images/pots-and-pans.jpg");
-  background-size: cover;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
 
-.intro .left-content {
-  /* border: 1px solid #281f15; */
-  margin: auto;
-  width: 80%;
-  padding: 0 1em;
-  background: #fff;
-  opacity: 0.5;
+.cta-button:hover {
+  background-color: #ff8f00;
 }
-
-.intro .left-content p {
-  font-size: 1.5em;
-  font-weight: bold;
-  font-style: italic;
-  color: #000;
-  text-transform: uppercase;
-}
-
-.intro .right-content {
-  display: none;
-}
-/* End-OLD styles */
 
 /* New styles */
 #hero {
@@ -342,6 +263,7 @@ video {
   opacity: 0.75;
   position: relative;
   border-radius: 3px;
+  align-content: center;
 }
 
 .highlight-content p {

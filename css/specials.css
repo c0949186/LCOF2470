@@ -104,6 +104,7 @@
 /* Product of the Week: Two Columns */
 .product-week {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -115,22 +116,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 
 .image-column {
-  flex: 1;
+  flex: 2;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .image-cover {
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
+  width: 90%;
+  height: 350px;
   border-radius: 5px;
+  background-size: cover;
 }
 
 /* Weekly Sales 2 columns */
@@ -254,6 +256,25 @@
   .guarantee-badge {
       font-size: 1rem;
   }
+
+  .product-week {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .text-column {
+    flex: 1;
+    display: flex;
+  }
+  
+  .image-cover {
+    width: 90%;
+    height: 300px;
+  }
 }
 
 
@@ -267,6 +288,13 @@
   .sales-item {
       max-width: 90%; /* Adjusts width for smaller screens */
   }
+
+  .product-week {
+    display: flex;
+    flex-direction: column;
+  }
+
+
 }
 
 
