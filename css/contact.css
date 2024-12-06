@@ -1,6 +1,6 @@
 
 :root {
-  --primary-color: #ff6b00;
+  --primary-text-color: #ff6b00;
   --secondary-color: #ff9500;
   --text-dark: #333;
   --text-light: #666;
@@ -38,7 +38,7 @@ body {
   display: block;
   width: 100px;
   height: 4px;
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(to right, var(--primary-text-color), var(--secondary-color));
   margin: 15px auto 0;
   border-radius: 2px;
 }
@@ -117,7 +117,7 @@ input[type="date"]:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: var(--primary-color);
+  border-color: var(--primary-text-color);
 }
 
 .radio-group,
@@ -152,7 +152,7 @@ textarea {
 }
 
 .btn-submit {
-  background-color: var(--primary-color);
+  background-color: var(--primary-text-color);
   color: white;
 }
 

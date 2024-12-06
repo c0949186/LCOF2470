@@ -107,11 +107,12 @@ figcaption {
 
 /* Our Story Section */
 .our-story {
-  background-color: #464543;
-  color: #fff;
+  background-color: #faf9f9;
+  color: #3d3b38;
   padding: 20px;
   border-radius: 8px;
   margin: 0 1rem 40px 1rem;
+  text-align: center;
 }
 
 .our-story h2 {
@@ -119,8 +120,13 @@ figcaption {
 }
 
 .our-story p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  /* font-size: 1.1rem;
+  line-height: 1.6; */
+
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #3f3e3e;
 }
 
 
@@ -132,10 +138,6 @@ figcaption {
 
   .team-introduction p {
       font-size: 1.3rem;
-  }
-
-  .team-list {
-      justify-content: flex-start;
   }
 
   .team-list figure {

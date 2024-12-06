@@ -41,9 +41,79 @@ img, video {
   box-sizing: border-box;
 }
 
+/* Styles for Header and Navigation */
+/* Mobile Navigation (Default) */
+:root {
+  --primary-color: #282726;
+  --secondary-color: #ff6f3f;
+  --light-color: #ffffff;
+  --text-color: #333;
+}
+
+.nav-toggle {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  color: var(--primary-color);
+}
+
+nav {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+nav ul {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+nav ul.active {
+  display: flex;
+}
+
+nav li {
+  width: 100%;
+  text-align: center;
+}
+
+nav li a {
+  display: block;
+  color: var(--light-color);
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  transition: background-color 0.3s ease;
+}
+
+nav li a:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--light-color);
+}
+
+.header-logo {
+  max-width: 200px;
+  height: auto;
+}
 
 /* Style rules for header content */
-header {
+/* header {
   width: 100%;
   height: 200px;
   text-align: center;
@@ -61,15 +131,14 @@ header h1.banner-heading {
   width: 80%;
   font-size: 1.5em;
   color: #281f15;
-}
+} */
 
 
 /* Style rules for navigation area */
-nav {
-  /* background-color: #2a1f14; */
+/* nav {
   display: block;
-  background-color: #282726; /* Same dark black as footer */
-  color: #fff;            /* White text for links and branding */
+  background-color: #282726;
+  color: #fff;
 }
 
 nav ul {
@@ -93,11 +162,10 @@ nav li a {
   color: #fff;
   font-size: 1.5em;
   font-weight: 400;
-  /* text-align: center; */
   padding: 0.5em 2em;
   text-decoration: none;
   
-}
+} */
 
 /* Styles for Hero page body content */
 
@@ -560,7 +628,7 @@ footer {
   }
 
   /* Styles for Nutrition page */
-  aside {
+  /* aside {
     text-align: center;
     font-size: 1.25em;
     font-style: italic;
@@ -568,9 +636,8 @@ footer {
     padding: 2%;
     background-color: rgba(204, 204, 204, 0.5);
     box-shadow: 5px 5px 8px #000;
-    /* text-shadow: 5px 5px 5px #b3b3b3; */
     border-radius: 0 15px;
-  }
+  } */
 
   .grid-item4 {
     grid-column: 1 / span 3;
@@ -579,7 +646,33 @@ footer {
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1024px), print {
+  /* Styles for Header and Desktop */
   nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  nav ul {
+      display: flex;
+      max-width: 1200px;
+      width: 100%;
+      justify-content: center;
+      margin: 0 auto;
+      flex-direction: row; /* Ensure horizontal layout */
+  }
+
+  nav li {
+      flex-grow: 0; /* Prevent equal width */
+      margin: 0 0.5rem;
+  }
+
+  nav li a {
+      padding: 1rem;
+      white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  /* nav {
       width: 100%;
   }
 
@@ -595,7 +688,7 @@ footer {
   nav li a {
       padding: 0.5em 1em;
       font-size: 24px;
-  }
+  } */
 
   /* Styles for Hero page: OLD styles */
   .intro {

@@ -1,7 +1,4 @@
 /* Styles for Aboutus page */
-body {
-  background-color: #3d3b38;
-}
 
 #about {
   padding-top: 2em;
@@ -10,9 +7,9 @@ body {
 .about-section, .story-section, .reasons-section, .guarantee-section {
   margin-bottom: 40px;
   padding: 20px;
-  background: white;
+  background-color: #faf9f9;
   border-radius: 8px;
-  border: 1.7px solid #3d3b38;
+  border: 1.7px solid #faf9f9;
 }
 
 .about-section:hover, .story-section:hover,
@@ -50,7 +47,7 @@ p {
   margin-bottom: 40px;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 .story-heading {

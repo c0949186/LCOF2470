@@ -11,14 +11,16 @@
 /* Banner */
 .specials-banner {
   /* background-color: #fff; */
-  color: #575555;
+  color: #333;
   text-align: center;
   padding: 20px;
   justify-content: center;
 }
 
 .specials-banner h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
 }
 
 .specials-banner p {
@@ -168,13 +170,13 @@
 
 .sales-item h3 {
   font-size: 1.2rem;
-  color: #575555;
+  color: #333;
   margin-bottom: 10px;
 }
 
 .sales-item p {
   font-size: 1rem;
-  color: #575555;
+  color: #333;
 }
 
 /* Styles for guarantee section */
@@ -199,7 +201,7 @@
 }
 
 .guarantee-card h2 {
-  color: #575555; 
+  color: #333; 
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
@@ -329,7 +331,7 @@ footer {
 }
 
 .reasons-card h2 {
-  color: #575555;
+  color: #333;
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
