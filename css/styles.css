@@ -241,7 +241,7 @@ video {
 }
 
 .instruction-text h2 {
-  color: #FF6A13; /* Vibrant orange accent */
+  color: #575555; /* Vibrant orange accent */
   font-size: 1.8rem;
   margin-bottom: 15px;
 }
@@ -333,7 +333,7 @@ video {
 
 .bottom h2 {
   margin-top: 1.5em;
-  color: #281f15;
+  color: #575555;
 }
 
 .sub-content {

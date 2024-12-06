@@ -288,7 +288,7 @@ tbody tr:hover {
 
 .training-table caption {
   padding: 15px;
-  background-color: #2c2c2c;
+  background-color: #575555;
   color: white;
   font-size: 1.2em;
   text-align: left;
@@ -296,7 +296,7 @@ tbody tr:hover {
 }
 
 .training-table thead tr {
-  background-color: #2c2c2c;
+  background-color: #575555;
   color: white;
   text-align: left;
 }

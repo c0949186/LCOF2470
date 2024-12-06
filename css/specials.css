@@ -10,15 +10,11 @@
 
 /* Banner */
 .specials-banner {
-  background-color: #fff;
-  color: #D95D00;
+  /* background-color: #fff; */
+  color: #575555;
   text-align: center;
   padding: 20px;
   justify-content: center;
-  /* background: linear-gradient(
-    rgba(0, 0, 0, 0.20), 
-    rgba(0, 0, 0, 0.35)
-  ), url("../images/pots-and-pans.jpg"); */
 }
 
 .specials-banner h1 {
@@ -29,6 +25,17 @@
   font-size: 1.2rem;
 }
 
+/* border gradient */
+.gradient-border {
+  /* border gradient */
+  border: 4px solid transparent;
+  background: 
+    linear-gradient(to right, white, white), 
+    linear-gradient(to right, #D95D00 , blue); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
 /* Content Rows */
 .content-row {
   text-align: center;
@@ -37,23 +44,31 @@
   margin: 10px auto;
   max-width: 1200px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  color: white;
+  border-radius: 5px;
+  color: #D95D00;
 }
-
-
-.content-row:nth-child(even) {
-  background: #464543;
-} 
 
 .content-row h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
+  position: relative;
 }
 
-.content-row:nth-child(odd) h2 {
+.highlight-header::after {
+  content: '';
+  position: absolute;
+  bottom: -9px; /* Adjust this to control the distance between the text and the underline */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #D95D00, #2a28c4);
+}
+
+/* .content-row:nth-child(odd) h2 {
   color: #D95D00;
-} 
+}  */
 
 
 .content-item {
@@ -64,13 +79,13 @@
 }
 
 .content-item h2 {
-  color: white;
+  /* color: white; */
   margin-bottom: 15px;
 }
 
 .content-item p {
   font-size: 1rem;
-  color: white;
+  /* color: white; */
 }
 
 .content-item ul {
@@ -89,6 +104,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .text-column {
@@ -111,7 +128,7 @@
   height: 300px;
   background-size: cover;
   background-position: center;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 /* Weekly Sales 2 columns */
@@ -138,26 +155,26 @@
   padding: 10px;
   /* background: #3d3b38; */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  border: 1.7px solid #D95D00;
+  border-radius: 5px;
+  /* border: 1.7px solid #D95D00; */
 }
 
 .sales-item img {
   max-width: 100%; /* Makes images responsive */
   height: auto;
-  border-radius: 8px;
+  border-radius: 5px;
   margin-bottom: 10px;
 }
 
 .sales-item h3 {
   font-size: 1.2rem;
-  color: #282726;
+  color: #575555;
   margin-bottom: 10px;
 }
 
 .sales-item p {
   font-size: 1rem;
-  color: #282726;
+  color: #575555;
 }
 
 /* Styles for guarantee section */
@@ -176,13 +193,13 @@
   padding: 30px;
   max-width: 600px;
   text-align: center;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); */
   border-radius: 12px;
   position: relative;
 }
 
 .guarantee-card h2 {
-  color: #D95D00;
+  color: #575555; 
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
@@ -257,7 +274,7 @@
   height: auto;
   max-width: 400px;
   margin: 10px auto;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 /* Guarantee Highlight */
@@ -298,7 +315,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
-  background-color: #f9f9f9;
+  background-color: #464543;
 }
 
 .reasons-card {
@@ -312,7 +329,7 @@ footer {
 }
 
 .reasons-card h2 {
-  color: #D95D00;
+  color: #575555;
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
