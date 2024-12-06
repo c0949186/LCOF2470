@@ -1,0 +1,383 @@
+
+/* Styles for Specials */
+/* Color notes
+--white: #ffffff;
+--dark-grey: #2c2c2c;
+--light-grey: #f4f4f4;
+--orange: #ff6f00;
+--orange-hover: #ff8f00; 
+*/
+
+/* Banner */
+.specials-banner {
+  background-color: #fff;
+  color: #D95D00;
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+  /* background: linear-gradient(
+    rgba(0, 0, 0, 0.20), 
+    rgba(0, 0, 0, 0.35)
+  ), url("../images/pots-and-pans.jpg"); */
+}
+
+.specials-banner h1 {
+  font-size: 2rem;
+}
+
+.specials-banner p {
+  font-size: 1.2rem;
+}
+
+/* Content Rows */
+.content-row {
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 1200px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  color: white;
+}
+
+
+.content-row:nth-child(even) {
+  background: #464543;
+} 
+
+.content-row h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.content-row:nth-child(odd) h2 {
+  color: #D95D00;
+} 
+
+
+.content-item {
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+}
+
+.content-item h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.content-item p {
+  font-size: 1rem;
+  color: white;
+}
+
+.content-item ul {
+  list-style-type: disc;
+  margin: 10px auto;
+  padding: 0;
+  text-align: left;
+}
+
+.content-item li {
+  margin: 5px 0;
+}
+
+/* Product of the Week: Two Columns */
+.product-week {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.text-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-cover {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+/* Weekly Sales 2 columns */
+.weekly-sales {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sales-columns {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+}
+
+.sales-item {
+  flex: 1;
+  max-width: 45%; /* Ensures columns don't exceed 45% width each */
+  text-align: center;
+  padding: 10px;
+  /* background: #3d3b38; */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1.7px solid #D95D00;
+}
+
+.sales-item img {
+  max-width: 100%; /* Makes images responsive */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.sales-item h3 {
+  font-size: 1.2rem;
+  color: #282726;
+  margin-bottom: 10px;
+}
+
+.sales-item p {
+  font-size: 1rem;
+  color: #282726;
+}
+
+/* Styles for guarantee section */
+/* Customer Guarantee Section */
+.guarantee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  color: #D95D00;
+}
+
+.guarantee-card {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  position: relative;
+}
+
+.guarantee-card h2 {
+  color: #D95D00;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.guarantee-card p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.guarantee-card strong {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+/* Guarantee Badge */
+.guarantee-badge {
+  background-color: #D95D00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.badge-text {
+  text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .guarantee-card {
+      padding: 20px;
+      width: 90%;
+  }
+
+  .guarantee-card h2 {
+      font-size: 1.6rem;
+  }
+
+  .guarantee-card p {
+      font-size: 1rem;
+  }
+
+  .guarantee-badge {
+      font-size: 1rem;
+  }
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .sales-columns {
+      flex-direction: column; /* Stacks the items vertically */
+      align-items: center;
+  }
+
+  .sales-item {
+      max-width: 90%; /* Adjusts width for smaller screens */
+  }
+}
+
+
+/* Images */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+/* Guarantee Highlight */
+.guarantee strong {
+  color: #d32f2f;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .content-row {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h1 {
+      font-size: 1.5rem;
+  }
+
+  .banner p {
+      font-size: 1rem;
+  }
+}
+
+
+/* Reason to choose us */
+/* Reasons to Choose Us Section */
+.reasons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.reasons-card {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  position: relative;
+}
+
+.reasons-card h2 {
+  color: #D95D00;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.reasons-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reasons-list li {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.reasons-list li:last-child {
+  border-bottom: none;
+}
+
+.check-icon {
+  color: #D95D00;
+  margin-right: 10px;
+  font-size: 1.4rem;
+}
+
+/* Trust Badge */
+.trust-badge {
+  background-color: #D95D00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.badge-text {
+  text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reasons-card {
+      padding: 20px;
+      width: 90%;
+  }
+
+  .reasons-card h2 {
+      font-size: 1.6rem;
+  }
+
+  .reasons-list li {
+      font-size: 1rem;
+  }
+
+  .trust-badge {
+      font-size: 1rem;
+  }
+}
+
+
+/* End Styles for Specials */

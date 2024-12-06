@@ -11,46 +11,84 @@
 <body>
 	<div id="container">
 		<!-- Use the header area for the website name or logo -->
-		<header>
+		<header class="header">
 			<!-- <h1 class="banner-heading">Slow Cooker Society</h1> -->
-			<a href="index.html"><img src="images/logo.jpg" alt="Slower Cooker Society logo" height="200" width="200" class="banner-logo"></a>
+			<a href="index.html"><img src="images/logo.jpg" alt="Slower Cooker Society logo" height="200" width="200" class="header-logo"></a>
 		</header>
+
+		<!-- Use the nav area to add hyperlinks to other pages within the website -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				
+				<!-- Need works -->
+				<li><a href="team.html">Our Team</a></li>
+				<li><a href="specials.html">Specials</a></li>
+				<li><a href="training.html">Training</a></li>
+				<li><a href="media.html">Media</a></li>
+				<li><a href="faqs.html">FAQs</a></li>
+
+				<!-- Not required -->
+				<!-- <li><a href="nutrition.html">Nutrition Tips</a></li>
+				<li><a href="shop.html">Shop</a></li> -->
+
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		
 		
 		<!-- Use the main area to add the main content of the webpage -->
 		<main>
-			<!-- Use the nav area to add hyperlinks to other pages within the website -->
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="nutrition.html">Nutrition Tips</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
 			
 			<div id="hero">
 				<div class="hero-content">
 					<div class="highlight">
 						<div class="highlight-content">
-							<p>Slow Cooking</p>
-							<p>Fast Nutrition – Delicious</p>
-							<p>Healthy Meals Made Effortless</p>
+							<h2>Welcome to Slowcooker Society –</h2>
+							<p>Here to Make Your Experience Exceptional!</p>
 						</div>
 					</div>
 
+					<!-- Choosing SlowCooker Instructions -->
+					<div class="content-row cooker-instructions">
+						<div class="instruction-container">
+								<!-- Video Column -->
+								<div class="instruction-video">
+										<video controls>
+											<source src="media/videoplayback.mp4" type="video/mp4">
+
+											<p>Your browser does not support the video element.</p>
+										</video>
+								</div>
+								<!-- Text Column -->
+								<div class="instruction-text">
+										<h2>Choosing the Perfect Slow Cooker</h2>
+										<p>Picking the right slow cooker can make a world of difference in your kitchen. Here are a few quick tips:</p>
+										<ul>
+											<li>Choose the right size based on your family size.</li>
+											<li>Decide between a manual or programmable model.</li>
+											<li>Look for features like adjustable temperature and safety settings.</li>
+										</ul>
+								</div>
+						</div>
+					</div>
+
+
 					<div class="bottom">
+						<h2 class="title">Why slow-cooking culture</h2>
 						<div class="sub-content">
 							<div id="pot1" class="pots gradient">
 								<h3>Preserve Nutrients</h3>
 								<img src="images/hero-pic1.jpg" alt="piano teacher and student sitting at a piano" class="round">
-								<p>As a professional nutritionist, I know how important it is to retain nutrients in every meal. Slow cooking helps preserve essential vitamins and minerals by using low, steady heat, ensuring your food stays nutrient-dense and full of natural flavor.</p>
+								<p>As a professional nutritionist, I know how important it is to retain nutrients in every meal. Slow cooking helps preserve essential vitamins and minerals.</p>
 							</div>
 	
 							<div id="pot2" class="pots gradient-reverse">
 									<h3>Effortless Meal Plan</h3>
 									<img src="images/hero-pic2.jpg" alt="child with a smile holding a guitar" class="round">
 									<p>
-										From plant-based to protein-packed, slow cookers make it easy to accommodate any dietary need. You can effortlessly prepare soups, stews, and hearty meals packed with whole grains, lean proteins, and fresh vegetables, ensuring that you stay on track with your nutritional goals.
+										From plant-based to protein-packed, slow cookers make it easy to accommodate any dietary need. 
 									</p>
 							</div>
 	
@@ -58,7 +96,7 @@
 								<h3>Time-Saving</h3>
 								<img src="images/hero-pic3.jpg" alt="piano teacher and student sitting at a piano" class="round">
 								<p>
-									Whether you're a busy professional or managing a hectic family life, slow cooking allows you to prepare balanced, home-cooked meals without constant supervision. Just set it, forget it, and come home to a nourishing meal that supports your well-being.
+									Whether you're a busy professional or managing a hectic family life, slow cooking allows you to prepare balanced, home-cooked meals without constant supervision.
 								</p>
 						</div>
 					</div>
@@ -99,8 +137,10 @@
 
 			<!-- Footer Bottom -->
 			<div class="footer-bottom">
-				<p>&copy; 2024 Nutrify | All Rights Reserved</p>
-				<p><a href="mailto:slowcookersociety@club.net">slowcookersociety@club.net</a></p>
+				<p>&copy; Copyright 2099. All Rights Reserved.</p>
+				<p>Request information</p>
+				<p>Evelyn Oo&nbsp; &nbsp;C0949186</p>
+				<p><a href="mailto:slowcookersociety@club.net">Request information</a></p>
 			</div>
 		</footer>
 
