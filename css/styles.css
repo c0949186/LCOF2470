@@ -11,7 +11,8 @@ color-5: #e7dfd8 */
 
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1 {
+body, header, nav, main, footer, img, h1, div,
+article, aside, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,6 +24,20 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
+h1, h2, h3 {
+  line-height: 1.6;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+  box-sizing: border-box;
+}
+
 
 /* Style rules for header content */
 header {
@@ -30,7 +45,12 @@ header {
   height: 200px;
   text-align: center;
   font-size: 3em;
-  display: block;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  text-align: center;
 }
 
 header h1.banner-heading {
@@ -132,13 +152,114 @@ nav li a {
 
 .highlight {
   padding: 1rem 0 2rem 0;
-  height: 400px;
+  height: 500px;
   align-content: center;
   background: linear-gradient(
     rgba(0, 0, 0, 0.20), 
     rgba(0, 0, 0, 0.35)
-  ), url("../images/pots-and-pans.jpg");
+  ), url("../images/spices.jpg");
   background-size: cover;
+}
+
+.video-content {
+  /* width: auto;
+  height: auto;
+  position: relative; */
+
+  width: 100%;
+  height: auto;
+  position: relative;
+  align-content: center;
+}
+  
+h2.title {
+  text-transform: capitalize;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center; 
+  color: #FF6A13;
+}
+
+video {
+  padding: 1em;
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: inherit;
+}
+
+/* Styles for hoosing Right cooker section */
+/* Brewing Instructions Section */
+.cooker-instructions {
+  padding: 40px 20px;
+  /* background-color: #282726; Coffee-shop dark grey background */
+  color: #ffffff; /* Text in white for contrast */
+  margin: 1.5em;
+  /* border: 2px solid #282726; */
+  /* border-radius: 8px; */
+}
+
+.cooker-instructions h2 {
+  margin-top: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.instruction-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between columns */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.instruction-video {
+  flex: 2; /* Larger column for video */
+  max-width: 65%;
+  border-radius: 12px; /* Modern rounded corners */
+  overflow: hidden;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
+
+.instruction-video video {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensures video scales properly */
+}
+
+.instruction-text {
+  flex: 1; /* Smaller column for text */
+  max-width: 300%;
+  text-align: left;
+  padding: 20px;
+  background-color: #fff; /* Contrast white background for text */
+  color: #282726; /* Text matches overall dark theme */
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.instruction-text h2 {
+  color: #FF6A13; /* Vibrant orange accent */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.instruction-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.instruction-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.instruction-text ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
 .highlight-content {
@@ -147,8 +268,9 @@ nav li a {
   width: 60%;
   padding: 1em;
   background: #fff;
-  opacity: 0.5;
+  opacity: 0.75;
   position: relative;
+  border-radius: 3px;
 }
 
 .highlight-content p {
@@ -185,22 +307,33 @@ nav li a {
 }
 
 .gradient {
-  background: linear-gradient(135deg, #e07357, #feb47b, #cc6c12, #a83232);
-  /* background: linear-gradient(135deg, #3e2723, #795548, #a1887f, #d7ccc8); */
+  background: radial-gradient(circle, rgba(254,180,123,1) 15%, rgba(217,99,31,1) 96%);
   background-size: 300% 300%;
-  animation: gradientBackground 3s ease infinite;
+  /* animation: gradient 3s ease infinite; */
 }
 
 .gradient-reverse {
-  background: linear-gradient(135deg, #e07357, #feb47b, #cc6c12, #a83232);
-  /* background: linear-gradient(135deg, #3e2723, #795548, #a1887f, #d7ccc8); */
+  background: radial-gradient(circle, rgba(254,180,123,1) 15%, rgba(217,99,31,1) 96%);
   background-size: 300% 300%;
-  animation: gradient-reverse 3s ease infinite;
+  /* animation: gradient-reverse 3s ease infinite; */
 }
 
 .gradient:hover,
 .gradient-reverse:hover {
-  background: linear-gradient(-45deg, #feb47b, #ec935f, #d38569, #4d3122);
+  background: radial-gradient(circle, rgba(254,180,123,1) 33%, rgba(217,99,31,1) 82%);
+}
+
+.bottom {
+  align-content: center;
+  text-align: center; 
+  margin: 1.5em;
+  border: 2px solid #D95D00;
+  border-radius: 8px;
+}
+
+.bottom h2 {
+  margin-top: 1.5em;
+  color: #281f15;
 }
 
 .sub-content {
@@ -218,25 +351,95 @@ nav li a {
   margin: 1.5em;
   padding: 1.5em;
   border-radius: 0.5em;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pots:hover {
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 0 11px rgba(33,44,44,.5); 
 }
 
 .pots h3 {
   font-size: 1.5em;
-  font-weight: 400;
+  font-weight: bold;
   overflow: hidden;
 }
 
 .pots p {
-  font-weight: 300;
   overflow: hidden;
 }
-
 
 img.round {
   width: 200px; /* Sets a maximum width for the image */
   height: 200px; /* Maintains the aspect ratio */
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover;
+}
+
+.pots:hover img {
+  box-shadow: 0 0 11px rgba(2,2,2,.); 
+}
+
+img.corner-round {
+  border-radius: 8px;
+  height: 200px;
+  width: 90%;
+}
+
+/* Style rules for main content */
+div.grid {
+  background-color: #fff;
+  padding: 2%;
+  font-size: 1.15em;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Mobile styles for Nutrition page */
+article h3 {
+  font-size: 1.75em;
+}
+article {
+  padding: 2%;
+}
+
+article h3 {
+  text-align: center;
+}
+
+article img {
+  margin: 0 auto;
+}
+
+article ul {
+  margin-left: 10%;
+}
+
+article:nth-of-type(2) {
+  background-color: rgba(204, 204, 204, 0.3);
+}
+
+
+/* Styles for about us page */
+.about-us {
+  align-content: center;
+}
+
+.about-us h3 {
+  text-align:center;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+.our-mission .text {
+  align-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.our-mission .img {
+  width: 100%;
+  display: none;
+  width: 100%;
 }
 
 
@@ -346,10 +549,33 @@ footer {
     padding: 1em;
     height: 130px;
   }
+  /* Tablet styles for grid */
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+  }
+
+  /* Styles for Nutrition page */
+  aside {
+    text-align: center;
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: bold;
+    padding: 2%;
+    background-color: rgba(204, 204, 204, 0.5);
+    box-shadow: 5px 5px 8px #000;
+    /* text-shadow: 5px 5px 5px #b3b3b3; */
+    border-radius: 0 15px;
+  }
+
+  .grid-item4 {
+    grid-column: 1 / span 3;
+  }
 }
 
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 961px), print {
+@media screen and (min-width: 1024px), print {
   nav {
       width: 100%;
   }
@@ -407,6 +633,39 @@ footer {
     width: auto;
     padding: 0;
   } 
+
+  /* Styles for Nutrition page */
+  article h3 {
+    font-size: 1.75em;
+  }
+
+  /* Styles for about us page */
+  .our-mission .text {
+    width: 55%;
+    display: inline-block;
+    float: left;
+  }
+
+  .our-mission .img {
+    width: 44%;
+    height: 250px;
+    display: inline-block;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.20), 
+      rgba(32, 18, 18, 0.35)
+    ), url("../images/mini.jpg");
+    background-size: cover;
+    float: right;
+  }
+
+  /* Styles for instruciton video */
+  .instruction-container {
+    flex-direction: row;
+  }
+
+  .instruction-video, .instruction-text {
+    width: 100%;
+  }
 }
 
 
