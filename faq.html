@@ -7,9 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/faq.css">
 	<link rel="icon" type="image/png" href="images/pot.png">
-	<script src="scripts/navigation.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/faq.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -39,72 +41,47 @@
 		</nav>
 		
 		<!-- Use the main area to add the main content of the webpage -->
-		<main>
-			
-			<div id="hero">
-				<div class="hero-content">
-					<div class="highlight">
-						<div class="highlight-content">
-							<h2>Welcome to Slowcooker Society –</h2>
-							<p>Here to Make Your Experience Exceptional!</p>
-							<a href="specials.html" class="cta-button">Let's shop!</a>
-						</div>
-					</div>
+		<main class="main-content">
+      <h1 class="faq-title">Frequently Asked Questions</h1>
+      <section class="faq-container">
+          <!-- Question 1 -->
+          <div class="faq-item">
+              <button class="faq-question">What is a slow cooker and how does it work?</button>
+              <div class="faq-answer">
+                  <p>A slow cooker is an electric appliance that cooks food at a low, steady temperature over several hours. It's ideal for soups, stews, and tenderizing meats.</p>
+              </div>
+          </div>
+          <!-- Question 2 -->
+          <div class="faq-item">
+              <button class="faq-question">What size slow cooker should I buy?</button>
+              <div class="faq-answer">
+                  <p>It depends on your needs. A 3-quart slow cooker is great for small meals, while a 6-7 quart size is perfect for larger families or batch cooking.</p>
+              </div>
+          </div>
+          <!-- Question 3 -->
+          <div class="faq-item">
+              <button class="faq-question">Can I leave my slow cooker on while I’m not home?</button>
+              <div class="faq-answer">
+                  <p>Yes, slow cookers are designed to operate safely for long periods, even unattended. Ensure it's placed on a heat-safe surface and away from flammable items.</p>
+              </div>
+          </div>
+          <!-- Question 4 -->
+          <div class="faq-item">
+              <button class="faq-question">Are slow cookers energy efficient?</button>
+              <div class="faq-answer">
+                  <p>Yes, slow cookers use less energy than a standard oven and are cost-effective for long cooking times.</p>
+              </div>
+          </div>
+          <!-- Question 5 -->
+          <div class="faq-item">
+              <button class="faq-question">Can I cook frozen meat in a slow cooker?</button>
+              <div class="faq-answer">
+                  <p>It's recommended to thaw meat first to ensure even cooking and avoid potential food safety issues.</p>
+              </div>
+          </div>
+      </section>
+  </main>
 
-					<!-- Choosing SlowCooker Instructions -->
-					<div class="content-row cooker-instructions">
-						<div class="instruction-container">
-								<!-- Video Column -->
-								<div class="instruction-video">
-										<video controls>
-											<source src="media/videoplayback.mp4" type="video/mp4">
-
-											<p>Your browser does not support the video element.</p>
-										</video>
-								</div>
-								<!-- Text Column -->
-								<div class="instruction-text">
-										<h2>Choosing the Perfect Slow Cooker</h2>
-										<p>Picking the right slow cooker can make a world of difference in your kitchen. Here are a few quick tips:</p>
-										<ul>
-											<li>Choose the right size based on your family size.</li>
-											<li>Decide between a manual or programmable model.</li>
-											<li>Look for features like adjustable temperature and safety settings.</li>
-										</ul>
-								</div>
-						</div>
-					</div>
-
-
-					<div class="bottom">
-						<h2 class="title">Why slow-cooking culture</h2>
-						<div class="sub-content">
-							<div id="pot1" class="pots gradient">
-								<h3>Preserve Nutrients</h3>
-								<img src="images/hero-pic1.jpg" alt="piano teacher and student sitting at a piano" class="round">
-								<p>As a professional nutritionist, I know how important it is to retain nutrients in every meal. Slow cooking helps preserve essential vitamins and minerals.</p>
-							</div>
-	
-							<div id="pot2" class="pots gradient-reverse">
-									<h3>Effortless Meal Plan</h3>
-									<img src="images/hero-pic2.jpg" alt="child with a smile holding a guitar" class="round">
-									<p>
-										From plant-based to protein-packed, slow cookers make it easy to accommodate any dietary need. 
-									</p>
-							</div>
-	
-							<div id="pot3" class="pots gradient">
-								<h3>Time-Saving</h3>
-								<img src="images/hero-pic3.jpg" alt="piano teacher and student sitting at a piano" class="round">
-								<p>
-									Whether you're a busy professional or managing a hectic family life, slow cooking allows you to prepare balanced, home-cooked meals without constant supervision.
-								</p>
-						</div>
-					</div>
-					</div>
-				</div>
-			</div>
-		</main>
 		
 		<footer>
 			<div class="footer-container">
